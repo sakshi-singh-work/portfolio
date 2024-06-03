@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=IBM+Plex+Mono:ital,wght@1,200&family=Josefin+Sans&family=Raleway:wght@200&family=Sigmar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Fira+Sans+Condensed:wght@400&family=IBM+Plex+Mono:ital,wght@1,200&family=Raleway:wght@200&family=Sigmar&display=swap");
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.aboutContainer .heading {
+  background-color: rgb(219, 165, 19) !important;
+  font-size: 18px;
+  color: black;
+  font-family: "Fira Sans Condensed", sans-serif;
+  padding: 0px 8px;
+}
+
+.aboutContainer .subHeading {
+  font-size: 40px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.aboutContainer .contentHeading {
+  color: white;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 32px;
+  margin: 0px 0px 8px;
+}
+
+.aboutContainer .contentHeading .contentHeading2 {
+  border: none;
+  font-family: "Fira Sans Condensed", sans-serif;
+  border-bottom: 3px solid rgb(219, 165, 19);
+}
+
+.aboutContainer .contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.aboutContainer .content {
+  width: 500px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid rgb(219, 165, 19);
+  padding: 15px;
+}
+
+.aboutContainer .content .insideContainer {
+  margin-top: 10px;
+}
+
+.aboutContainer .aboutImage {
+  flex: 1;
+}
+
+.aboutContainer .aboutImage img {
+  height: 400px;
+  width: 250px;
+  border: 3px solid rgb(219, 165, 19);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .aboutContainer .subHeading {
+    font-size: 22px;
+  }
+
+  .aboutContainer .contentHeading {
+    font-size: 24px;
+  }
+
+  .aboutContainer .content {
+    width: 250px;
+    font-size: 14px;
+  }
+
+  .aboutContainer .aboutImage img {
+    height: 200px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutContainer .subHeading {
+    font-size: 22px;
+  }
+
+  .aboutContainer .contentHeading {
+    font-size: 24px;
+  }
+
+  .aboutContainer .content {
+    width: 250px;
+    font-size: 14px;
+  }
+
+  .aboutContainer .aboutImage img {
+    height: 200px;
+    width: 150px;
+  }
+}

@@ -1,0 +1,19 @@
+.topBtn {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  .topBtnStyle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #e1dddd;
+    color: white;
+    cursor: pointer;
+    border: 2px solid  #e1dddd;
+  }
+  .topBtnStyle:hover {
+    animation: none;
+    background-color: rgb(219, 165, 19);
+    color: #fff;
+  }
+}

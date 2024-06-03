@@ -1,0 +1,170 @@
+.container {
+  height: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  margin: 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(14, 9, 121, 1) 8%,
+    rgba(0, 212, 255, 1) 89%
+  );
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  margin: 12px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navbar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.navbar .name {
+  margin-top: 10px;
+  font-size: 25px;
+  color: white;
+  flex: 1;
+}
+
+.navbar .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+  gap: 40px;
+  flex: 5;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .navigation .link {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar .navigation .link:hover {
+  color: rgb(84, 71, 201);
+}
+
+/* Sections */
+.landingPage {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(14, 9, 121, 1) 8%,
+    rgba(0, 212, 255, 1) 89%
+  );
+  height: 100vh;
+}
+
+.aboutSection {
+  height: 100vh;
+}
+
+.skillSection {
+  background-color: #0b0b3c;
+  padding-top: 3rem;
+  height: 100vh;
+}
+
+.projectSection {
+  background-color: #0b0b3c;
+}
+
+.contactForm {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  height: 100vh;
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 1em;
+}
+
+body {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar .navigation {
+    justify-content: center;
+  }
+
+  .navbar .navigation .link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .navbar {
+    margin: 8px;
+    gap: 6px;
+  }
+
+  .navbar img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar .name {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+
+  .navbar .navigation {
+    gap: 20px;
+  }
+
+  .navbar .navigation .link {
+    font-size: 16px;
+  }
+
+  .landingPage,
+  .aboutSection,
+  .skillSection,
+  .projectSection,
+  .contactForm {
+    height: auto;
+  }
+}

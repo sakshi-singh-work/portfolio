@@ -1,0 +1,125 @@
+.mainContainer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.mainContainer .aboutContainer {
+  border-radius: 8px;
+  display: flex;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainContainer .aboutContainer .leftContainer {
+  width: 60%;
+  height: 85%;
+  padding: 30px;
+  padding-left: 60px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.mainContainer .aboutContainer .leftContainer .designationText {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+
+.mainContainer .aboutContainer .leftContainer .text {
+  color: rgb(219, 165, 19);
+  font-size: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.mainContainer .aboutContainer .leftContainer .locationText {
+  color: aliceblue;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.mainContainer .aboutContainer .profileContainer {
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 40%;
+  border-top-right-radius: 8px;
+  height: 100%;
+}
+
+.mainContainer .aboutContainer .profileContainer img {
+  width: 455px;
+  height: 455px;
+  border-radius: 50%;
+  border: 16px solid white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .mainContainer .aboutContainer {
+    flex-direction: column;
+  }
+
+  .mainContainer .aboutContainer .leftContainer,
+  .mainContainer .aboutContainer .profileContainer {
+    width: 100%;
+  }
+
+  .mainContainer .aboutContainer .leftContainer {
+    padding: 20px;
+    padding-left: 40px;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .mainContainer .aboutContainer .leftContainer .designationText {
+    font-size: 40px;
+  }
+
+  .mainContainer .aboutContainer .leftContainer .text {
+    font-size: 60px;
+  }
+
+  .mainContainer .aboutContainer .leftContainer .locationText {
+    font-size: 18px;
+  }
+
+  .mainContainer .aboutContainer .profileContainer img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mainContainer .aboutContainer .leftContainer {
+    padding: 10px;
+    padding-left: 20px;
+  }
+
+  .mainContainer .aboutContainer .leftContainer .designationText {
+    font-size: 30px;
+  }
+
+  .mainContainer .aboutContainer .leftContainer .text {
+    font-size: 50px;
+  }
+
+  .mainContainer .aboutContainer .leftContainer .locationText {
+    font-size: 16px;
+  }
+
+  .mainContainer .aboutContainer .profileContainer img {
+    width: 180px;
+    height: 180px;
+    border-width: 8px;
+  }
+}

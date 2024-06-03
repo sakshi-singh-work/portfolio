@@ -1,0 +1,127 @@
+.skillContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.skillContainer .skillHeading {
+  font-size: 30px;
+  font-family: cursive;
+  color: white;
+}
+
+.skillContainer .skillContainer1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.skillContainer .skillContainer2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .skillContainer .skillHeading {
+    font-size: 24px;
+  }
+
+  .skillContainer .skillContainer1,
+  .skillContainer .skillContainer2 {
+    .skillContainer {
+      margin-top: 30px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      gap: 40px;
+    }
+    
+    .skillContainer .skillHeading {
+      font-size: 30px;
+      font-family: cursive;
+      color: white;
+    }
+    
+    .skillContainer .skillContainer1 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
+    }
+    
+    .skillContainer .skillContainer2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 50px;
+    }
+    
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      .skillContainer .skillHeading {
+        font-size: 24px;
+      }
+    
+      .skillContainer .skillContainer1,
+      .skillContainer .skillContainer2 {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .skillContainer .skillContainer1,
+      .skillContainer .skillContainer2 > div {
+        width: 100%;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .skillContainer .skillHeading {
+        font-size: 20px;
+      }
+    
+      .skillContainer .skillContainer1,
+      .skillContainer .skillContainer2 {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .skillContainer .skillContainer1,
+      .skillContainer .skillContainer2 > div {
+        width: 100%;
+      }
+    }
+    
+  }
+
+  .skillContainer .skillContainer1,
+  .skillContainer .skillContainer2 > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillContainer .skillHeading {
+    font-size: 20px;
+  }
+
+  .skillContainer .skillContainer1,
+  .skillContainer .skillContainer2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skillContainer .skillContainer1,
+  .skillContainer .skillContainer2 > div {
+    width: 100%;
+  }
+}
