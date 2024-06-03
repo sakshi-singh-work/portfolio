@@ -45,7 +45,7 @@ const projects: Project[] = [
     title: "Swiggy Clone",
     imgSrc: buWebsite,
     repo: "https://github.com/sakshi-singh-work/namaste-react",
-    description: "Swiggy clone",
+    description: "Build swiggy like restaurant system from scratch using mordern bundler Parcel.",
   },
   {
     id: 6,
